@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Temperature Converter</title>
+</head>
+
+<body>
+  <main>
+    <label></label>
+    <input class="checkbox_input" type="checkbox" />
+    <div class="toggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide">
+      <h4>My Projects</h4>
+      <ul>
+        <li>
+          <i class="slide_icon fa-solid fa-user"></i><a href="https://myportfolio999.netlify.app/">My Portfolio</a>
+        </li>
+        <li>
+          <i class="slide_icon fa-solid fa-calculator"></i><a href="https://mycalculator99.netlify.app/">Calculator</a>
+        </li>
+        <li>
+          <i class="slide_icon fa-solid fa-clock"></i><a href="https://clock99.netlify.app/">Clock</a>
+        </li>
+        <li>
+          <i class="slide_icon fa-solid fa-temperature-three-quarters"></i><a
+            href="https://temperatureconverter9977.netlify.app/">Temperature Converter</a>
+        </li>
+        <li>
+          <i class="slide_icon fa-solid fa-pen-to-square"></i><a href="https://todolist99.netlify.app/">To do List</a>
+        </li>
+        <li>
+          <i class="slide_icon fa-solid fa-eye-dropper"></i><a href="https://colorpicker99.netlify.app/">Color
+            Picker</a>
+        </li>
+        <li>
+          <i class="slide_icon fa-solid fa-cart-shopping"></i><a href="https://amazonclone99.netlify.app/">Amazon
+            Clone</a>
+        </li>
+        <li>
+          <i class="slide_icon fa-solid fa-sun"></i><a href="https://onoffbulb99.netlify.app/">Switch On/OFF Bulb</a>
+        </li>
+      </ul>
+      <div class="social_link">
+        <button class="social_btn">
+          <i class="linked_icon fa-brands fa-linkedin"></i><a
+            href="https://www.linkedin.com/in/kaushik-kumar-gupta/">Linkedin</a>
+        </button>
+      </div>
+    </div></label>
+
+    <div class="content_area">
+      <h2 class="heading">Temperature Converter</h2>
+      <div class="container">
+        <div class="celcius">
+          <h3 class="temp_value_cls">100 C</h3>
+        </div>
+
+        <div class="icon_container">
+          <i class="icon fa-solid fa-arrow-right-arrow-left"></i>
+        </div>
+
+        <div class="ferenhite">
+          <h3 class="temp_value_fra">212 F</h3>
+        </div>
+      </div>
+      <div class="button_container">
+        <div class="select_div">
+          <select name="" id="option_list" onchange="convertTemperature()">
+            <option value="1">Celsius to Fahrenheit</option>
+            <option value="2">Fahrenheit to Celsius</option>
+          </select>
+        </div>
+        <div class="input_div">
+          <input type="number" id="temperature" placeholder="Enter Celsius value" />
+        </div>
+        <div class="button_div">
+          <button type="button" onclick="convertTemperature()">
+            Calculate
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="footer_para">Made by Kaushik Gupta</p>
+  </footer>
+</body>
+<script src="index.js"></script>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCvp6MabguqEw_RnR7wy497j7GR12vyR-0",
+    authDomain: "project-login-cba55.firebaseapp.com",
+    projectId: "project-login-cba55",
+    storageBucket: "project-login-cba55.appspot.com",
+    messagingSenderId: "872045297310",
+    appId: "1:872045297310:web:05c3717524b900726c058f"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+
+</html>

@@ -1,0 +1,54 @@
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .content_area {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 17px;
+    padding: 10px 40px;
+  }
+  .container {
+    margin: 20px;
+    width: 310px;
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    align-items: center;
+  }
+  .icon_container {
+    margin: auto 12px;
+    font-size: 18px;
+    color: black;
+  }
+  .button_container {
+    width: 310px;
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    place-items: center;
+    align-items: center;
+  }
+  footer{
+    margin-bottom: 10px;
+  }
+}
